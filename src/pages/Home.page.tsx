@@ -1,11 +1,12 @@
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import { Outlet } from 'react-router-dom'
+import { HeaderSearch } from '@/components/HeaderSearch/HeaderSearch'
+import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle'
+import { Welcome } from '../components/Welcome/Welcome'
 
 export function HomePage() {
   return (
     <>
       <Welcome />
-      <ColorSchemeToggle />
     </>
-  );
+  )
 }

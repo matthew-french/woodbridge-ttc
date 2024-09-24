@@ -1,5 +1,5 @@
-import { Anchor, Text, Title } from '@mantine/core';
-import classes from './Welcome.module.css';
+import { Anchor, Text, Title } from '@mantine/core'
+import classes from './Welcome.module.css'
 
 export function Welcome() {
   return (
@@ -7,7 +7,7 @@ export function Welcome() {
       <Title className={classes.title} ta="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          Woodbrige Table Tennis Club
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
@@ -19,5 +19,5 @@ export function Welcome() {
         . To get started edit pages/Home.page.tsx file.
       </Text>
     </>
-  );
+  )
 }

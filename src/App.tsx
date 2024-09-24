@@ -1,13 +1,15 @@
-import '@mantine/core/styles.css';
+import '@mantine/core/styles.css'
 
-import { MantineProvider } from '@mantine/core';
-import { Router } from './Router';
-import { theme } from './theme';
+import { MantineProvider } from '@mantine/core'
+import { Router } from './Router'
+import { theme } from './theme'
+
+// import { HeaderSearch } from './components/HeaderSearch/HeaderSearch';
 
 export default function App() {
   return (
     <MantineProvider theme={theme}>
       <Router />
     </MantineProvider>
-  );
+  )
 }

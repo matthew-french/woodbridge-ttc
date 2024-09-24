@@ -2,7 +2,8 @@
 const config = {
   printWidth: 100,
   singleQuote: true,
-  trailingComma: 'es5',
+  trailingComma: 'none',
+  semi: false,
   plugins: ['@ianvs/prettier-plugin-sort-imports'],
   importOrder: [
     '.*styles.css$',
@@ -20,16 +21,16 @@ const config = {
     '^@/.*$',
     '^../(?!.*.css$).*$',
     '^./(?!.*.css$).*$',
-    '\\.css$',
+    '\\.css$'
   ],
   overrides: [
     {
-      files: '*.mdx',
+      files: '*.scss',
       options: {
-        printWidth: 70,
-      },
-    },
-  ],
-};
+        singleQuote: false
+      }
+    }
+  ]
+}
 
-export default config;
+export default config
