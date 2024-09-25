@@ -5,10 +5,10 @@ import classes from './HeaderSearch.module.css'
 
 const links = [
   { link: '/', label: 'Home' },
-  { link: '/news', label: 'Latest News' },
-  { link: '/about', label: 'About Us' },
-  { link: '/play', label: 'Play & Compete' },
-  { link: '/contact', label: 'Contact Us' }
+  { link: '/latest-news', label: 'Latest News' },
+  { link: '/about-us', label: 'About Us' },
+  { link: '/play-and-compete', label: 'Play & Compete' },
+  { link: '/contact-us', label: 'Contact Us' }
 ]
 
 export function HeaderSearch() {
