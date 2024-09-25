@@ -1,4 +1,7 @@
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import { ViteReactSSG } from 'vite-react-ssg'
+import { routes } from './App'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<App />)
+export const createRoot = ViteReactSSG(
+  // react-router-dom data routes
+  { routes }
+)

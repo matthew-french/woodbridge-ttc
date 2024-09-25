@@ -1,12 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Layout } from './components/Layout'
+import type { RouteRecord } from 'vite-react-ssg'
+import { Layout } from './Layout'
 import { AboutPage } from './pages/AboutUs.page'
 import { ContactUsPage } from './pages/ContactUs.page'
 import { HomePage } from './pages/Home.page'
 import { LatestNewsPage } from './pages/LatestNews.page'
 import { PlayAndCompetePage } from './pages/PlayAndCompete.page'
 
-const router = createBrowserRouter([
+export const routes: RouteRecord[] = [
   {
     path: '/',
     element: <Layout />, // Use Layout as the wrapper
@@ -33,8 +34,10 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+]
 
-export function Router() {
-  return <RouterProvider router={router} />
-}
+// const router = createBrowserRouter(routes)
+
+// export function Router() {
+//   return <RouterProvider router={router} />
+// }
